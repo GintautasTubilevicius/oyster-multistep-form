@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MultiStepForm from './components/MultiStepForm';
 
 function App() {
+  const productCategory = "Trousers";
+  const productPrice = 145;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //<div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="w-full h-full bg-gray-100 flex justify-center">
+      <MultiStepForm category={productCategory} price={productPrice} />
     </div>
   );
 }
 
 export default App;
+
