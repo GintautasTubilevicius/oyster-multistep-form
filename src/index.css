@@ -13,17 +13,37 @@ body {
   color: "#363636";
 }
 
-.hover-item {
+/* .hover-item {
   position: relative;
-}
+}*/
 
+/*
 .hover-item:hover::before {
   content: url('/svg/edit.svg');
   position: absolute;
-  top: -31px; /* Adjust as needed */
+  top: -31px; 
   left: 50%;
   transform: translateX(-50%);
-  width: 48px; /* Optional: Set SVG size */
-  height: 35px; /* Optional: Set SVG size */
+  width: 48px; 
+  height: 35px;
+  z-index: 10;
+} */
+
+.hover-item {
+  position: relative; /* Reikalinga, kad piktograma būtų teisingai pozicionuota */
+}
+
+.hover-item:hover .icon {
+  display: block; /* Piktograma rodoma tik hover būsenoje */
+}
+
+.icon {
+  display: none; /* Paslėpta be hover */
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px; /* SVG dydis */
+  height: 35px; /* SVG dydis */
   z-index: 10;
 }

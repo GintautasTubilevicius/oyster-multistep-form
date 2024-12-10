@@ -92,6 +92,11 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
                   className="hover-item box-content text-[16px]/[16px] p-3 bg-[#DBDBDB] font-semibold hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
                 >
                   {getFormattedFabric()}
+                  <img
+                  src="/svg/edit.svg"
+                  alt="Edit icon"
+                  className="icon absolute top-[-31px] left-1/2 transform -translate-x-1/2 hidden"
+                />
                 </p>
               </div>
             </div>
