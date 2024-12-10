@@ -18,7 +18,7 @@ body {
 }
 
 .hover-item:hover::before {
-  content: url('../public/svg/edit.svg');
+  content: url('svg/edit.svg');
   position: absolute;
   top: -31px; /* Adjust as needed */
   left: 50%;
