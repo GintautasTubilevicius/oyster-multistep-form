@@ -13,19 +13,31 @@ body {
   color: "#363636";
 }
 
+.overflow-x-auto {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none; /* Paslepia slinktį */
+}
+
 /* .hover-item {
   position: relative;
-}*/
+}
 
-/*
 .hover-item:hover::before {
-  content: url('/svg/edit.svg');
+  content: url('../public/svg/edit.svg');
   position: absolute;
-  top: -31px; 
+  top: -30px; 
   left: 50%;
   transform: translateX(-50%);
   width: 48px; 
-  height: 35px;
+  height: 35px; 
   z-index: 10;
 } */
 
