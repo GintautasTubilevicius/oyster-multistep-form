@@ -13,11 +13,17 @@ body {
   color: "#363636";
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+.hover-item {
+  position: relative;
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.hover-item:hover::before {
+  content: url('../public/svg/edit.svg');
+  position: absolute;
+  top: -31px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px; /* Optional: Set SVG size */
+  height: 35px; /* Optional: Set SVG size */
+  z-index: 10;
 }

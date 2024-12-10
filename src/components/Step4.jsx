@@ -16,7 +16,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       return (
         <p
           onClick={() => setCurrentStep(2)}
-          className="p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           Not selected
         </p>
@@ -27,7 +27,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       <p
         key={index}
         onClick={() => setCurrentStep(2)}
-        className="p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+        className="hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
       >
         {feature.name}
       </p>
@@ -39,7 +39,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       return (
         <p
           onClick={() => setCurrentStep(3)}
-          className="p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           Not provided
         </p>
@@ -53,7 +53,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
         <p
           key={index}
           onClick={() => setCurrentStep(3)}
-          className="p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           {`${label}: ${value}${unit.toLowerCase()}`}
         </p>
@@ -89,7 +89,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
               <div className="flex flex-row flex-wrap gap-2 bg-gray-200">
                 <p
                   onClick={() => setCurrentStep(1)}
-                  className="box-content text-[16px]/[16px] p-3 bg-[#DBDBDB] font-semibold hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+                  className="hover-item box-content text-[16px]/[16px] p-3 bg-[#DBDBDB] font-semibold hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
                 >
                   {getFormattedFabric()}
                 </p>
@@ -123,6 +123,8 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
 };
 
 export default Step4;
+
+
 
 
 

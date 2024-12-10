@@ -24,107 +24,107 @@ const Step1 = ({ formData, setFormData }) => {
                     { id: 6, name: "Dark grey", image: "/images/placeholder-image.jpg" },
                 ],
             },
-            {
-                groupName: "Genoa corduroy",
-                description: "440g/qm (small ribs)",
-                fabrics: [
-                    { id: 7, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 8, name: "Olive", image: "/images/placeholder-image.jpg" },
-                    { id: 9, name: "Grey", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Stretch Corduroy",
-                description: "320g/qm (small ribs)",
-                fabrics: [
-                    { id: 10, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 11, name: "Olive", image: "/images/placeholder-image.jpg" },
-                    { id: 12, name: "Wine-red", image: "/images/placeholder-image.jpg" },
-                    { id: 13, name: "Gold-colored", image: "/images/placeholder-image.jpg" },
-                    { id: 14, name: "Chocolate-brown", image: "/images/placeholder-image.jpg" },
-                    { id: 15, name: "Purple", image: "/images/placeholder-image.jpg" },
-                    { id: 16, name: "Pink", image: "/images/placeholder-image.jpg" },
-                    { id: 17, name: "Ink-blue", image: "/images/placeholder-image.jpg" },
-                    { id: 18, name: "Grass-green", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Twisting double pilot",
-                description: "German leather 600 g/qm",
-                fabrics: [
-                    { id: 19, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 20, name: "Grey", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Twisting double pilot (extended)",
-                description: "English leather 520 g/qm",
-                fabrics: [
-                    { id: 21, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 22, name: "White", image: "/images/placeholder-image.jpg" },
-                    { id: 23, name: "Grey", image: "/images/placeholder-image.jpg" },
-                    { id: 24, name: "Brown", image: "/images/placeholder-image.jpg" },
-                    { id: 25, name: "Dark brown", image: "/images/placeholder-image.jpg" },
-                    { id: 26, name: "Green", image: "/images/placeholder-image.jpg" },
-                    { id: 27, name: "Steel Blue", image: "/images/placeholder-image.jpg" },
-                    { id: 28, name: "Maikaro", image: "/images/placeholder-image.jpg" },
-                    { id: 29, name: "Hamburg stripes", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Stretch pilot",
-                description: "410g/qm",
-                fabrics: [
-                    { id: 30, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 31, name: "Navy", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "CORDURA®",
-                description: "cotton 260g/qm",
-                fabrics: [
-                    { id: 32, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 33, name: "Dark Gray", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "CANVAS PES",
-                description: "cotton 310g/qm",
-                fabrics: [
-                    { id: 34, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 35, name: "Brown", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Ribbed moleskin",
-                description: "320 g/qm",
-                fabrics: [
-                    { id: 36, name: "Black", image: "/images/placeholder-image.jpg" },
-                    { id: 37, name: "Grey", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Twill",
-                description: "100% cotton 375g/qm",
-                fabrics: [
-                    { id: 38, name: "Black", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Jeans Stretch",
-                description: "12,25oz/385g/qm",
-                fabrics: [
-                    { id: 39, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
-                ],
-            },
-            {
-                groupName: "Denim Jeans",
-                description: "100% cotton 14,5oz/475g/qm",
-                fabrics: [
-                    { id: 40, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
-                    { id: 41, name: "Black", image: "/images/placeholder-image.jpg" },
-                ],
-            },
+            // {
+            //     groupName: "Genoa corduroy",
+            //     description: "440g/qm (small ribs)",
+            //     fabrics: [
+            //         { id: 7, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 8, name: "Olive", image: "/images/placeholder-image.jpg" },
+            //         { id: 9, name: "Grey", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Stretch Corduroy",
+            //     description: "320g/qm (small ribs)",
+            //     fabrics: [
+            //         { id: 10, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 11, name: "Olive", image: "/images/placeholder-image.jpg" },
+            //         { id: 12, name: "Wine-red", image: "/images/placeholder-image.jpg" },
+            //         { id: 13, name: "Gold-colored", image: "/images/placeholder-image.jpg" },
+            //         { id: 14, name: "Chocolate-brown", image: "/images/placeholder-image.jpg" },
+            //         { id: 15, name: "Purple", image: "/images/placeholder-image.jpg" },
+            //         { id: 16, name: "Pink", image: "/images/placeholder-image.jpg" },
+            //         { id: 17, name: "Ink-blue", image: "/images/placeholder-image.jpg" },
+            //         { id: 18, name: "Grass-green", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Twisting double pilot",
+            //     description: "German leather 600 g/qm",
+            //     fabrics: [
+            //         { id: 19, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 20, name: "Grey", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Twisting double pilot (extended)",
+            //     description: "English leather 520 g/qm",
+            //     fabrics: [
+            //         { id: 21, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 22, name: "White", image: "/images/placeholder-image.jpg" },
+            //         { id: 23, name: "Grey", image: "/images/placeholder-image.jpg" },
+            //         { id: 24, name: "Brown", image: "/images/placeholder-image.jpg" },
+            //         { id: 25, name: "Dark brown", image: "/images/placeholder-image.jpg" },
+            //         { id: 26, name: "Green", image: "/images/placeholder-image.jpg" },
+            //         { id: 27, name: "Steel Blue", image: "/images/placeholder-image.jpg" },
+            //         { id: 28, name: "Maikaro", image: "/images/placeholder-image.jpg" },
+            //         { id: 29, name: "Hamburg stripes", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Stretch pilot",
+            //     description: "410g/qm",
+            //     fabrics: [
+            //         { id: 30, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 31, name: "Navy", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "CORDURA®",
+            //     description: "cotton 260g/qm",
+            //     fabrics: [
+            //         { id: 32, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 33, name: "Dark Gray", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "CANVAS PES",
+            //     description: "cotton 310g/qm",
+            //     fabrics: [
+            //         { id: 34, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 35, name: "Brown", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Ribbed moleskin",
+            //     description: "320 g/qm",
+            //     fabrics: [
+            //         { id: 36, name: "Black", image: "/images/placeholder-image.jpg" },
+            //         { id: 37, name: "Grey", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Twill",
+            //     description: "100% cotton 375g/qm",
+            //     fabrics: [
+            //         { id: 38, name: "Black", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Jeans Stretch",
+            //     description: "12,25oz/385g/qm",
+            //     fabrics: [
+            //         { id: 39, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
+            // {
+            //     groupName: "Denim Jeans",
+            //     description: "100% cotton 14,5oz/475g/qm",
+            //     fabrics: [
+            //         { id: 40, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
+            //         { id: 41, name: "Black", image: "/images/placeholder-image.jpg" },
+            //     ],
+            // },
         ],
         organic: [
             {
@@ -184,13 +184,13 @@ const Step1 = ({ formData, setFormData }) => {
             {/* Kategorijų pasirinkimo mygtukai */}
             <div className="flex justify-center mb-6 text-[14px]">
                 <button
-                    className={`px-4 py-2 ${selectedCategory === "standard" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
+                    className={`text-nowrap px-5 py-3 lg:py:2 ${selectedCategory === "standard" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
                     onClick={() => setSelectedCategory("standard")}
                 >
                     STANDARD FABRICS
                 </button>
                 <button
-                    className={`px-4 py-2 ${selectedCategory === "organic" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
+                    className={`text-nowrap px-6 py-3 lg:py-2 ${selectedCategory === "organic" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
                     onClick={() => setSelectedCategory("organic")}
                 >
                     ORGANIC FABRICS
@@ -201,38 +201,38 @@ const Step1 = ({ formData, setFormData }) => {
             <div>
                 {fabrics[selectedCategory].map((group) => (
                     <div key={group.groupName} className="mb-8">
-                        <h3 className="text-center text-[24px] font-bold mb-1">{group.groupName}</h3>
-                        <p className="text-center text-[18px] mb-10">{group.description}</p>
-                        <div className="flex flex-wrap px-[11px] gap-[32px] justify-start">
+                        <h3 className="text-center text-[18px] font-bold mb-1 lg:text-[24px]">{group.groupName}</h3>
+                        <p className="text-center text-[14px] mb-10 lg:text-[18px]">{group.description}</p>
+                        <div className="flex flex-wrap gap-[16px] justify-start lg:gap-[32px] lg:px-[11px]">
                             {group.fabrics.map((fabric) => (
                                 <div
                                     key={fabric.id}
-                                    className={`relative w-[250px] ${selectedFabric?.id === fabric.id ? "border-[#BF000D]" : "border-gray-300"}`}
+                                    className={`relative w-[100px] lg:w-[250px] ${selectedFabric?.id === fabric.id ? "border-[#BF000D]" : "border-gray-300"}`}
                                     onClick={() => handleFabricSelect(fabric, group.groupName)}
                                 >
                                     <img
                                         src={fabric.image}
                                         alt={fabric.name}
-                                        className="cursor-pointer w-auto h-[250px] object-cover"
+                                        className="cursor-pointer w-auto h-[100px] object-cover lg:h-[250px]"
                                     />
                                     {selectedFabric?.id === fabric.id && (
                                         <img
                                             src="/svg/check_circle.svg"
                                             alt="Selected"
-                                            className="absolute top-[20px] right-[20px] w-[34px] h-[34px]"
+                                            className="absolute top-[10px] right-[10px] w-[20px] h-[20px] lg:w-[34px] lg:h-[34px] lg:top-[20px] lg:right-[20px]"
                                         />
                                     )}
                                     <div className="text-start mt-4">
                                         {selectedCategory === "organic" ? (
                                             <>
-                                                <div className="flex flex-col justify-start h-[69px]">
-                                                    <p className="text-[18px] h-[27px] font-semibold">{fabric.name_desc}</p>
-                                                    <p className="text-[14px] h-[21px] font-regular">{fabric.fabric_desc}</p>
+                                                <div className="flex flex-col justify-start h-[90px] lg:h-[69px]">
+                                                    <p className="text-[12px] h-[40px] font-semibold lg:text-[18px] lg:h-[27px]">{fabric.name_desc}</p>
+                                                    <p className="text-[10px] h-[40px] font-regular lg:text-[14px] lg:h-[21px]">{fabric.fabric_desc}</p>
                                                 </div>
-                                                <p className="text-[20px] font-semibold mt-2">{fabric.name}</p>
+                                                <p className="text-[14px] font-semibold mt-2 lg:text-[20px]">{fabric.name}</p>
                                             </>
                                         ) : (
-                                            <p className="text-[18px] font-semibold">{fabric.name}</p>
+                                            <p className="text-[14px] font-semibold lg:text-[18px]">{fabric.name}</p>
                                         )}
                                     </div>
                                 </div>
