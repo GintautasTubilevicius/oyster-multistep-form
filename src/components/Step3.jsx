@@ -77,8 +77,8 @@ const Step3 = ({ formData, setFormData }) => {
               key={category}
               className={`cursor-pointer ${
                 currentSubpage === category
-                  ? "px-4 py-[10px] text-[14px] bg-[#363636] text-[#FFFFFF] lg:py-[12px] lg:font-bold lg:text-[#363636] lg:text-[16px] lg:border-r-[5px] lg:border-[#363636] lg:bg-transparent "
-                  : "px-4 py-[10px] text-[14px] text-regular text-[#363636] lg:py-[12px] lg:text-[#676767] lg:text-[16px]"
+                  ? "px-4 py-[14px] text-[14px]/[14px] bg-[#363636] text-[#FFFFFF] lg:py-[12px] lg:font-bold lg:text-[#363636] lg:text-[16px]/[16px] lg:border-r-[5px] lg:border-[#363636] lg:bg-transparent "
+                  : "px-4 py-[14px] text-[14px]/[14px] text-regular text-[#363636] lg:py-[12px] lg:text-[#676767] lg:text-[16px]/[16px]"
               }`}
               onClick={() => setCurrentSubpage(category)}
             >
@@ -93,7 +93,7 @@ const Step3 = ({ formData, setFormData }) => {
         {/* Keisti matavimo vienetus */}
         <div className="flex justify-start lg:justify-center mb-6">
           <button
-            className={`w-[59px] h-[40px] px-4 py-2 text-[14px] text-center lg:w-[79px] lg:text-[16px] ${
+            className={`w-[59px] h-[40px] px-4 py-2 text-[14px]/[14px] text-center lg:w-[79px] lg:text-[16px]/[16px] ${
               unit === "Cm" ? "bg-[#363636] text-[#FFFFFF]" : "bg-[#EEEEEE] text-[#363636]"
             }`}
             onClick={() => {
@@ -104,7 +104,7 @@ const Step3 = ({ formData, setFormData }) => {
             Cm
           </button>
           <button
-            className={`w-[59px] h-[40px] px-4 py-2 text-[14px] text-center lg:w-[79px] lg:text-[16px] ${
+            className={`w-[59px] h-[40px] px-4 py-2 text-[14px]/[14px] text-center lg:w-[79px] lg:text-[16px]/[16px] ${
               unit === "Inch" ? "bg-[#363636] text-[#FFFFFF]" : "bg-[#EEEEEE] text-[#363636]"
             }`}
             onClick={() => {

@@ -16,7 +16,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       return (
         <p
           onClick={() => setCurrentStep(2)}
-          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[14px]/[14px] lg:text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           Not selected
           <img
@@ -32,7 +32,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       <p
         key={index}
         onClick={() => setCurrentStep(2)}
-        className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+        className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[14px]/[14px] lg:text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
       >
         {feature.name}
         <img
@@ -49,7 +49,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       return (
         <p
           onClick={() => setCurrentStep(3)}
-          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[14px]/[14px] lg:text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           Not provided
           <img
@@ -68,7 +68,7 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
         <p
           key={index}
           onClick={() => setCurrentStep(3)}
-          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+          className="relative hover-item p-3 bg-[#DBDBDB] font-semibold text-[14px]/[14px] lg:text-[16px]/[16px] hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
         >
           {`${label}: ${value}${unit.toLowerCase()}`}
           <img
@@ -86,10 +86,10 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
   };
 
   return (
-    <div className="flex flex-row px-[10px] justify-center items-center gap-8">
+    <div className="flex flex-col justify-center items-center gap-8 lg:flex-row lg:px-[10px]">
       {/* Pirmas konteineris: Nuotrauka */}
-      <div className="w-1/2 flex justify-center items-center h-fit">
-        <div className="w-full flex items-center justify-center">
+      <div className="flex justify-center items-center h-fit lg:w-1/2">
+        <div className="flex w-[250px] items-center justify-center lg:w-full">
           <img
             src="/images/trousers.jpg"
             alt="Selected item"
@@ -99,17 +99,17 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
       </div>
 
       {/* Antras konteineris: Santrauka */}
-      <div className="w-1/2 flex justify-center flex-col p-10 bg-[#EEEEEE]">
+      <div className="flex justify-center -mx-5 px-5 py-8 flex-col bg-[#EEEEEE] lg:w-1/2 lg:mx-0 lg:p-10">
         <div>
           <h2 className="text-[24px] font-bold mb-6">{category.toUpperCase()}</h2>
-          <div className="flex flex-col gap-4 text-[16px]">
+          <div className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
             {/* Audinio informacija */}
             <div className="flex gap-8 border-b-[1px] pb-4">
               <div className="min-w-[60px] h-[24px]">Fabric</div>
               <div className="flex flex-row flex-wrap gap-2 bg-gray-200">
                 <p
                   onClick={() => setCurrentStep(1)}
-                  className="relative hover-item box-content text-[16px]/[16px] p-3 bg-[#DBDBDB] font-semibold hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
+                  className="relative hover-item box-content text-[14px]/[14px] lg:text-[16px]/[16px] p-3 bg-[#DBDBDB] font-semibold hover:bg-[#ADADAD] hover:shadow-xl cursor-pointer"
                 >
                   {getFormattedFabric()}
                   <img
@@ -133,11 +133,11 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
           </div>
         </div>
         <p className="my-8 text-[14px]">Please check your configured product and add to cart to proceed the order.</p>
-        <div className="flex flex-row gap-8 items-center">
+        <div className="flex flex-row gap-8 items-center justify-between lg:justify-start">
           <p className="font-bold text-[24px]">€{totalPrice.toFixed(2)}</p>
           <button
             onClick={handleAddToCart}
-            className="px-6 py-3 bg-[#BF000D] text-[#FFFFFF] font-bold text-[16px]"
+            className="px-6 py-3 bg-[#BF000D] text-[#FFFFFF] font-bold text-[14px] lg:text-[16px]"
           >
             Add to cart
           </button>
