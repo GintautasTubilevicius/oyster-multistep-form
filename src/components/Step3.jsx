@@ -69,16 +69,16 @@ const Step3 = ({ formData, setFormData }) => {
   return (
     <div className="flex flex-col justify-center gap-6 lg:gap-8 lg:flex-row">
       {/* Blokas 1: Navigacija */}
-      <div className="w-full max-w-[192px] text-end">
+      <div className="bg-[#EEEEEE] py-2 -mx-5 lg:w-full lg:mx-w-[192px] lg:text-end lg:bg-transparent lg:pl-0 lg:pr-0 lg:py-0 lg:mx-0">
         <h3 className="text-[24px] font-bold mb-6 hidden lg:block">MEASUREMENTS</h3>
-        <ul className="space-y-4">
+        <ul className="flex flex-row justify-center lg:space-y-4 lg:flex-col lg:p-0 lg:mr-0">
           {["BODY", "GARMET"].map((category) => (
             <li
               key={category}
-              className={`cursor-pointer p-2 ${
+              className={`cursor-pointer ${
                 currentSubpage === category
-                  ? "font-bold text-[16px] border-r-[5px] border-[#363636]"
-                  : "text-[#676767]"
+                  ? "px-4 py-[10px] text-[14px] bg-[#363636] text-[#FFFFFF] lg:py-[12px] lg:font-bold lg:text-[#363636] lg:text-[16px] lg:border-r-[5px] lg:border-[#363636] lg:bg-transparent "
+                  : "px-4 py-[10px] text-[14px] text-regular text-[#363636] lg:py-[12px] lg:text-[#676767] lg:text-[16px]"
               }`}
               onClick={() => setCurrentSubpage(category)}
             >
@@ -91,9 +91,9 @@ const Step3 = ({ formData, setFormData }) => {
       {/* Blokas 2: Matmenys */}
       <div className="flex flex-col w-full shrink-0 lg:max-w-[250px]">
         {/* Keisti matavimo vienetus */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-start lg:justify-center mb-6">
           <button
-            className={`px-4 py-2 ${
+            className={`w-[59px] h-[40px] px-4 py-2 text-[14px] text-center lg:w-[79px] lg:text-[16px] ${
               unit === "Cm" ? "bg-[#363636] text-[#FFFFFF]" : "bg-[#EEEEEE] text-[#363636]"
             }`}
             onClick={() => {
@@ -104,7 +104,7 @@ const Step3 = ({ formData, setFormData }) => {
             Cm
           </button>
           <button
-            className={`px-4 py-2 ${
+            className={`w-[59px] h-[40px] px-4 py-2 text-[14px] text-center lg:w-[79px] lg:text-[16px] ${
               unit === "Inch" ? "bg-[#363636] text-[#FFFFFF]" : "bg-[#EEEEEE] text-[#363636]"
             }`}
             onClick={() => {
@@ -131,7 +131,7 @@ const Step3 = ({ formData, setFormData }) => {
                   e.target.value = e.target.value.replace(/[^0-9.,]/g, ""); // Leisti tik skaičius
                 }}
                 onChange={handleInputChange}
-                className="w-[119px] h-[40px] px-3 py-[5px] border border-[#363636]"
+                className="w-[157px] h-[40px] px-3 py-[5px] border border-[#363636] lg:w-[119px]"
               />
             </div>
           ))}
@@ -153,7 +153,7 @@ const Step3 = ({ formData, setFormData }) => {
                   e.target.value = e.target.value.replace(/[^0-9.,]/g, ""); // Leisti tik skaičius
                 }}
                 onChange={handleInputChange}
-                className="w-[119px] h-[40px] px-3 py-[5px] border border-[#363636]"
+                className="w-[157px] h-[40px] px-3 py-[5px] border border-[#363636] lg:w-[119px]"
               />
             </div>
           ))}
@@ -162,19 +162,19 @@ const Step3 = ({ formData, setFormData }) => {
 
       {/* Blokas 3: Paveikslėlis */}
       <div
-        className={`flex flex-col items-center max-w-[250px] w-full shrink-0 lg:max-w-[395px] ${currentSubpage === "GARMET" ? "justify-center" : ""}`}
+        className={`flex justify-center shrink-0 lg:flex-col lg:items-center lg:max-w-[395px] ${currentSubpage === "GARMET" ? "justify-center" : ""}`}
       >
         <img
           src={getImageSrc()}
           alt={currentSubpage === "BODY" ? "Body measurements" : "Garment measurements"}
-          className={`${currentSubpage === "GARMET" ? "h-auto max-h-full object-contain" : "object-cover h-full"} w-full `}
+          className={`${currentSubpage === "GARMET" ? "h-auto max-h-full object-contain" : "object-cover h-full"} max-w-[250px] lg:max-w-[395px] `}
         />
       </div>
 
       {/* Blokas 4: Aprašymas */}
       <div className="relative flex flex-col justify-center max-w-[387px] w-full shrink-0 px-8 py-5 gap-8 bg-[#EEEEEE]">
         <div>
-          <h4 className="text-[20px] font-semibold mb-4">WAIST MEASUREMENT</h4>
+          <h4 className="text-[24px] font-semibold mb-4 lg:text-[20px]">WAIST MEASUREMENT</h4>
           <div className="text-[14px]">
             <p>
               Measure the circumference at the place where you will actually wear your jeans. Your waist measurement will
@@ -193,18 +193,18 @@ const Step3 = ({ formData, setFormData }) => {
           <img
             src="/images/placeholder-image.jpg"
             alt="Description"
-            className="object-cover border border-gray-300 w-[323px] h-[250px]"
+            className="object-cover border border-gray-300 w-full h-[200px] lg:w-[323px] lg:h-[250px]"
           />
           {!isVideoPlaying && (
             <button
               onClick={toggleVideo}
-              className="absolute flex items-center justify-center w-12 h-12 bg-[#363636] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute flex items-center justify-center w-8 h-8 bg-[#363636] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w-12 lg:h-12"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="white"
-                className="w-6 h-6"
+                className="w-4 h-4 lg:w-6 lg:h-6"
               >
                 <path d="M8 5v14l11-7z" />
               </svg>
