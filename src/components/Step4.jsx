@@ -89,11 +89,11 @@ const Step4 = ({ formData, category, setCurrentStep, price }) => {
     <div className="flex flex-col justify-center items-center gap-8 lg:flex-row lg:px-[10px]">
       {/* Pirmas konteineris: Nuotrauka */}
       <div className="flex justify-center items-center h-fit lg:w-1/2">
-        <div className="flex w-[250px] items-center justify-center lg:w-full">
+        <div className="flex h-[250px] items-center justify-center lg:h-full">
           <img
             src="/images/trousers.jpg"
             alt="Selected item"
-            className="max-w-[80%] max-h-[80%] object-contain"
+            className="object-contain max-h-[250px] lg:max-w-[80%] lg:max-h-[80%]"
           />
         </div>
       </div>

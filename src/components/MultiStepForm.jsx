@@ -46,7 +46,7 @@ const MultiStepForm = ({ category, price }) => {
 
       {currentStep < steps.length && (
         <div
-          className="w-full justify-self-end px-5 py-2 flex justify-between mt-6 bg-[#EEEEEE] text-[14px] lg:text-[16px] lg:px-8 sticky bottom-0"
+          className="w-full px-5 py-2 flex justify-between items-center mt-6 bg-[#EEEEEE] text-[14px] lg:text-[16px] lg:px-8 sticky bottom-0"
         >
           <button
             onClick={handlePrevious}
@@ -55,8 +55,11 @@ const MultiStepForm = ({ category, price }) => {
           >
             Previous
           </button>
+          <div className="text-[24px] items-center font-bold lg:hidden">
+            €{price}
+          </div>
           <div className="flex flex-row items-center gap-6">
-            <div className="text-[24px] font-bold">
+            <div className="text-[24px] font-bold hidden lg:block">
               €{price}
             </div>
             <button
