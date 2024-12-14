@@ -7,7 +7,7 @@ function App() {
 
   return (
     //<div className="min-h-screen bg-gray-100 flex items-center justify-center">
-    <div className="w-full h-full bg-gray-100 flex justify-center">
+    <div className="w-full h-full flex justify-center">
       <MultiStepForm category={productCategory} price={productPrice} />
     </div>
   );

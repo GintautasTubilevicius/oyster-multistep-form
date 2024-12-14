@@ -33,21 +33,21 @@ const Step1 = ({ formData, setFormData }) => {
             //         { id: 9, name: "Grey", image: "/images/placeholder-image.jpg" },
             //     ],
             // },
-            // {
-            //     groupName: "Stretch Corduroy",
-            //     description: "320g/qm (small ribs)",
-            //     fabrics: [
-            //         { id: 10, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 11, name: "Olive", image: "/images/placeholder-image.jpg" },
-            //         { id: 12, name: "Wine-red", image: "/images/placeholder-image.jpg" },
-            //         { id: 13, name: "Gold-colored", image: "/images/placeholder-image.jpg" },
-            //         { id: 14, name: "Chocolate-brown", image: "/images/placeholder-image.jpg" },
-            //         { id: 15, name: "Purple", image: "/images/placeholder-image.jpg" },
-            //         { id: 16, name: "Pink", image: "/images/placeholder-image.jpg" },
-            //         { id: 17, name: "Ink-blue", image: "/images/placeholder-image.jpg" },
-            //         { id: 18, name: "Grass-green", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
+            {
+                groupName: "Stretch Corduroy",
+                description: "320g/qm (small ribs)",
+                fabrics: [
+                    { id: 10, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 11, name: "Olive", image: "/images/placeholder-image.jpg" },
+                    { id: 12, name: "Wine-red", image: "/images/placeholder-image.jpg" },
+                    { id: 13, name: "Gold-colored", image: "/images/placeholder-image.jpg" },
+                    { id: 14, name: "Chocolate-brown", image: "/images/placeholder-image.jpg" },
+                    { id: 15, name: "Purple", image: "/images/placeholder-image.jpg" },
+                    { id: 16, name: "Pink", image: "/images/placeholder-image.jpg" },
+                    { id: 17, name: "Ink-blue", image: "/images/placeholder-image.jpg" },
+                    { id: 18, name: "Grass-green", image: "/images/placeholder-image.jpg" },
+                ],
+            },
             // {
             //     groupName: "Twisting double pilot",
             //     description: "German leather 600 g/qm",
@@ -184,13 +184,13 @@ const Step1 = ({ formData, setFormData }) => {
             {/* Kategorijų pasirinkimo mygtukai */}
             <div className="flex justify-center mb-6 text-[14px]">
                 <button
-                    className={`text-nowrap px-5 py-3 lg:py:2 ${selectedCategory === "standard" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
+                    className={`text-nowrap px-5 py-3 sm:py:2 ${selectedCategory === "standard" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
                     onClick={() => setSelectedCategory("standard")}
                 >
                     STANDARD FABRICS
                 </button>
                 <button
-                    className={`text-nowrap px-6 py-3 lg:py-2 ${selectedCategory === "organic" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
+                    className={`text-nowrap px-6 py-3 sm:py-2 ${selectedCategory === "organic" ? "bg-[#363636] text-white" : "bg-gray-200"}`}
                     onClick={() => setSelectedCategory("organic")}
                 >
                     ORGANIC FABRICS
@@ -201,38 +201,38 @@ const Step1 = ({ formData, setFormData }) => {
             <div>
                 {fabrics[selectedCategory].map((group) => (
                     <div key={group.groupName} className="mb-8">
-                        <h3 className="text-center text-[18px] font-bold mb-1 lg:text-[24px]">{group.groupName}</h3>
-                        <p className="text-center text-[14px] mb-10 lg:text-[18px]">{group.description}</p>
-                        <div className="flex flex-wrap gap-[16px] justify-start lg:gap-[32px] lg:px-[11px]">
+                        <h3 className="text-center text-[18px] font-bold mb-1 sm:text-[24px]">{group.groupName}</h3>
+                        <p className="text-center text-[14px] mb-10 sm:text-[18px]">{group.description}</p>
+                        <div className="flex flex-wrap gap-[16px] justify-start sm:gap-[32px] sm:px-[11px]">
                             {group.fabrics.map((fabric) => (
                                 <div
                                     key={fabric.id}
-                                    className={`relative w-[100px] lg:w-[250px] ${selectedFabric?.id === fabric.id ? "border-[#BF000D]" : "border-gray-300"}`}
+                                    className={`relative w-[100px] sm:w-[250px] ${selectedFabric?.id === fabric.id ? "border-[#BF000D]" : "border-gray-300"}`}
                                     onClick={() => handleFabricSelect(fabric, group.groupName)}
                                 >
                                     <img
                                         src={fabric.image}
                                         alt={fabric.name}
-                                        className="cursor-pointer w-auto h-[100px] object-cover lg:h-[250px]"
+                                        className="cursor-pointer w-auto h-[100px] object-cover sm:h-[250px]"
                                     />
                                     {selectedFabric?.id === fabric.id && (
                                         <img
                                             src="/svg/check_circle.svg"
                                             alt="Selected"
-                                            className="absolute top-[10px] right-[10px] w-[20px] h-[20px] lg:w-[34px] lg:h-[34px] lg:top-[20px] lg:right-[20px]"
+                                            className="absolute top-[10px] right-[10px] w-[20px] h-[20px] sm:w-[34px] sm:h-[34px] sm:top-[20px] sm:right-[20px]"
                                         />
                                     )}
                                     <div className="text-start mt-4">
                                         {selectedCategory === "organic" ? (
                                             <>
-                                                <div className="flex flex-col justify-start h-[90px] lg:h-[69px]">
-                                                    <p className="text-[12px] h-[40px] font-semibold lg:text-[18px] lg:h-[27px]">{fabric.name_desc}</p>
-                                                    <p className="text-[10px] h-[40px] font-regular lg:text-[14px] lg:h-[21px]">{fabric.fabric_desc}</p>
+                                                <div className="flex flex-col justify-start h-[90px] sm:h-[69px]">
+                                                    <p className="text-[12px] h-[40px] font-semibold sm:text-[18px] sm:h-[27px]">{fabric.name_desc}</p>
+                                                    <p className="text-[10px] h-[40px] font-regular sm:text-[14px] sm:h-[21px]">{fabric.fabric_desc}</p>
                                                 </div>
-                                                <p className="text-[14px] font-semibold mt-2 lg:text-[20px]">{fabric.name}</p>
+                                                <p className="text-[14px] font-semibold mt-2 sm:text-[20px]">{fabric.name}</p>
                                             </>
                                         ) : (
-                                            <p className="text-[14px] font-semibold lg:text-[18px]">{fabric.name}</p>
+                                            <p className="text-[14px] font-semibold sm:text-[18px]">{fabric.name}</p>
                                         )}
                                     </div>
                                 </div>

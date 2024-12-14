@@ -117,17 +117,17 @@ const Step2 = ({ formData, setFormData, category }) => {
     const categoryData = categories[activeCategory]?.[category] || [];
 
     return (
-        <div className="flex flex-col h-auto gap-8 justify-center lg:flex-row lg:p-4">
+        <div className="flex flex-col gap-8 sm:flex-row sm:p-4">
             {/* Šoninė navigacija */}
-            <div className="bg-[#EEEEEE] pl-0 pr-5 py-2 -mx-5 lg:min-w-[188px] lg:text-end lg:bg-transparent lg:pl-0 lg:pr-0 lg:py-0 lg:mx-0">
-                <h3 className="text-[24px] font-bold mb-4 hidden lg:block">FEATURES</h3>
-                <ul className="flex flex-row pl-5 pr-5 -mr-5 overflow-x-auto text-nowrap lg:space-y-4 lg:flex-col lg:p-0 lg:mr-0">
+            <div className="sm:sticky sm:top-0 sm:self-start sm:h-screen bg-[#EEEEEE] pl-0 pr-5 py-2 -mx-5 sm:min-w-[188px] sm:text-end sm:bg-transparent sm:pl-0 sm:pr-0 sm:py-0 sm:mx-0">
+                <h3 className="text-[24px] font-bold mb-4 hidden sm:block">FEATURES</h3>
+                <ul className="flex flex-row pl-5 pr-5 -mr-5 overflow-x-auto text-nowrap sm:space-y-4 sm:flex-col sm:p-0 sm:mr-0">
                     {Object.keys(categories).map((category) => (
                         <li
                             key={category}
                             className={`cursor-pointer p-2 ${activeCategory === category
-                                    ? "text-[14px] px-4 py-2 bg-[#363636] text-[#FFFFFF] lg:text-[16px] lg:font-bold lg:border-r-[5px] lg:border-[#363636] lg:bg-transparent lg:text-[#363636] lg:p-2"
-                                    : "text-regular text-[14px] text:[#363636] lg:text-[16px] lg:text-[#676767]"
+                                ? "text-[14px] px-4 py-2 bg-[#363636] text-[#FFFFFF] sm:text-[16px] sm:font-bold sm:border-r-[5px] sm:border-[#363636] sm:bg-transparent sm:text-[#363636] sm:p-2"
+                                : "text-regular text-[14px] text:[#363636] sm:text-[16px] sm:text-[#676767]"
                                 }`}
                             onClick={() => setActiveCategory(category)} // Pasirenkame kategoriją
                         >
@@ -138,32 +138,32 @@ const Step2 = ({ formData, setFormData, category }) => {
             </div>
 
             {/* Elementų sąrašas */}
-            <div className="lg:min-w-[1096px]">
+            <div className="sm:w-full ">
                 {/* Elementų sąrašas */}
-                <div className="flex flex-wrap gap-5 lg:gap-8 lg:justify-center">
+                <div className="flex flex-wrap gap-5 sm:gap-8 sm:justify-center">
                     {categoryData.length === 0 ? (
                         <div>No features available for this category.</div>
                     ) : (
                         categoryData.map((item, index) => (
                             <div
                                 key={index}
-                                className="relative w-[157px] lg:w-[250px]"
+                                className="relative w-[157px] sm:w-[250px]"
                                 onClick={() => handleItemSelect(item)}
                             >
                                 <img
                                     src="/images/placeholder-image.jpg"
                                     alt={item.name}
-                                    className="cursor-pointer w-[157px] h-[157px] object-cover lg:w-[250px] lg:h-[250px]"
+                                    className="cursor-pointer w-[157px] h-[157px] object-cover sm:w-[250px] sm:h-[250px]"
                                 />
                                 {selectedItems.find((selected) => selected.name === item.name) && (
                                     <img
                                         src="/svg/check_circle.svg"
                                         alt="Selected"
-                                        className="absolute top-[10px] right-[10px] w-[20px] h-[20px] lg:top-[20px] lg:right-[20px] lg:w-[34px] lg:h-[34px]"
+                                        className="absolute top-[10px] right-[10px] w-[20px] h-[20px] sm:top-[20px] sm:right-[20px] sm:w-[34px] sm:h-[34px]"
                                     />
                                 )}
-                                <p className="min-h-[36px] mt-2 text-start font-semibold text-[14px] text-wrap lg:min-h-[54px] lg:text-[18px] lg:mt-4">{item.name}</p>
-                                <p className="mt-2 text-start text-[16px] font-semibold lg:text-[20px]">€{item.price}</p>
+                                <p className="min-h-[36px] mt-2 text-start font-semibold text-[14px] text-wrap sm:min-h-[54px] sm:text-[18px] sm:mt-4">{item.name}</p>
+                                <p className="mt-2 text-start text-[16px] font-semibold sm:text-[20px]">€{item.price}</p>
                             </div>
                         ))
                     )}

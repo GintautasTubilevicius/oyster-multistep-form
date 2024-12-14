@@ -18,7 +18,7 @@ const MultiStepForm = ({ category, price }) => {
   const steps = [
     <Step1 formData={formData} setFormData={setFormData} />,
     <Step2 formData={formData} setFormData={setFormData} category={category} />,
-    <Step3 formData={formData} setFormData={setFormData} />,
+    <Step3 formData={formData} setFormData={setFormData} category={category} />,
     <Step4 formData={formData} category={category} setCurrentStep={setCurrentStep} price={price} />
   ];
 
@@ -35,10 +35,10 @@ const MultiStepForm = ({ category, price }) => {
   };
 
   return (
-    <div className="w-[375px] h-full pb-2 bg-white flex flex-col lg:w-[1440px] lg:pb-[80px]">
-      <div className="px-5 pt-8 flex flex-col relative lg:static lg:pt-[48px]">
+    <div className="w-[375px] h-full pb-2 bg-white flex flex-col sm:w-[1440px] sm:pb-[80px]">
+      <div className="px-5 pt-8 flex flex-col relative sm:static sm:pt-[48px]">
         <div className="text-center">
-          <h2 className="font-bold text-[24px] text-[#363636] lg:text-[36px]">MADE TO MEASURE</h2>
+          <h2 className="font-bold text-[24px] text-[#363636] sm:text-[36px]">MADE TO MEASURE</h2>
         </div>
         <StepIndicator currentStep={currentStep} setCurrentStep={setCurrentStep} />
         <div className="mt-6">{steps[currentStep - 1]}</div>
@@ -46,25 +46,25 @@ const MultiStepForm = ({ category, price }) => {
 
       {currentStep < steps.length && (
         <div
-          className="w-full px-5 py-2 flex justify-between items-center mt-6 bg-[#EEEEEE] text-[14px] lg:text-[16px] lg:px-8 sticky bottom-0"
+          className="w-full px-5 py-2 flex justify-between items-center mt-6 bg-[#EEEEEE] text-[14px] sm:text-[16px] sm:px-8 sticky bottom-0"
         >
           <button
             onClick={handlePrevious}
-            className="px-6 py-3 w-[104px] h-[44px] bg-[#D9D9D9] font-bold disabled:font-normal disabled:bg-[#363636] disabled:opacity-20 disabled:text-[#FFFFFF] lg:w-[110px] lg:h-[48px]"
+            className="px-6 py-3 w-[104px] h-[44px] bg-[#D9D9D9] font-bold disabled:font-normal disabled:bg-[#363636] disabled:opacity-20 disabled:text-[#FFFFFF] sm:w-[110px] sm:h-[48px]"
             disabled={currentStep === 1}
           >
             Previous
           </button>
-          <div className="text-[24px] items-center font-bold lg:hidden">
+          <div className="text-[24px] items-center font-bold sm:hidden">
             €{price}
           </div>
           <div className="flex flex-row items-center gap-6">
-            <div className="text-[24px] font-bold hidden lg:block">
+            <div className="text-[24px] font-bold hidden sm:block">
               €{price}
             </div>
             <button
               onClick={handleNext}
-              className="px-6 py-3 w-[104px] h-[44px] bg-[#BF000D] text-white font-bold lg:w-[110px] lg:h-[48px]"
+              className="px-6 py-3 w-[104px] h-[44px] bg-[#BF000D] text-white font-bold sm:w-[110px] sm:h-[48px]"
             >
               Next
             </button>
