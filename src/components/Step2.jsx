@@ -138,9 +138,9 @@ const Step2 = ({ formData, setFormData, category }) => {
             </div>
 
             {/* Elementų sąrašas */}
-            <div className="sm:w-full ">
+            <div className="sm:w-full">
                 {/* Elementų sąrašas */}
-                <div className="flex flex-wrap gap-5 sm:gap-8 sm:justify-center">
+                <div className="flex flex-wrap gap-5 sm:gap-8 sm:justify-start">
                     {categoryData.length === 0 ? (
                         <div>No features available for this category.</div>
                     ) : (
