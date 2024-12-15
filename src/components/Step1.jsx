@@ -48,83 +48,83 @@ const Step1 = ({ formData, setFormData }) => {
                     { id: 18, name: "Grass-green", image: "/images/placeholder-image.jpg" },
                 ],
             },
-            // {
-            //     groupName: "Twisting double pilot",
-            //     description: "German leather 600 g/qm",
-            //     fabrics: [
-            //         { id: 19, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 20, name: "Grey", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Twisting double pilot (extended)",
-            //     description: "English leather 520 g/qm",
-            //     fabrics: [
-            //         { id: 21, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 22, name: "White", image: "/images/placeholder-image.jpg" },
-            //         { id: 23, name: "Grey", image: "/images/placeholder-image.jpg" },
-            //         { id: 24, name: "Brown", image: "/images/placeholder-image.jpg" },
-            //         { id: 25, name: "Dark brown", image: "/images/placeholder-image.jpg" },
-            //         { id: 26, name: "Green", image: "/images/placeholder-image.jpg" },
-            //         { id: 27, name: "Steel Blue", image: "/images/placeholder-image.jpg" },
-            //         { id: 28, name: "Maikaro", image: "/images/placeholder-image.jpg" },
-            //         { id: 29, name: "Hamburg stripes", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Stretch pilot",
-            //     description: "410g/qm",
-            //     fabrics: [
-            //         { id: 30, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 31, name: "Navy", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "CORDURA®",
-            //     description: "cotton 260g/qm",
-            //     fabrics: [
-            //         { id: 32, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 33, name: "Dark Gray", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "CANVAS PES",
-            //     description: "cotton 310g/qm",
-            //     fabrics: [
-            //         { id: 34, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 35, name: "Brown", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Ribbed moleskin",
-            //     description: "320 g/qm",
-            //     fabrics: [
-            //         { id: 36, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 37, name: "Grey", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Twill",
-            //     description: "100% cotton 375g/qm",
-            //     fabrics: [
-            //         { id: 38, name: "Black", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Jeans Stretch",
-            //     description: "12,25oz/385g/qm",
-            //     fabrics: [
-            //         { id: 39, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
-            // {
-            //     groupName: "Denim Jeans",
-            //     description: "100% cotton 14,5oz/475g/qm",
-            //     fabrics: [
-            //         { id: 40, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
-            //         { id: 41, name: "Black", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
+            {
+                groupName: "Twisting double pilot",
+                description: "German leather 600 g/qm",
+                fabrics: [
+                    { id: 19, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 20, name: "Grey", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Twisting double pilot (extended)",
+                description: "English leather 520 g/qm",
+                fabrics: [
+                    { id: 21, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 22, name: "White", image: "/images/placeholder-image.jpg" },
+                    { id: 23, name: "Grey", image: "/images/placeholder-image.jpg" },
+                    { id: 24, name: "Brown", image: "/images/placeholder-image.jpg" },
+                    { id: 25, name: "Dark brown", image: "/images/placeholder-image.jpg" },
+                    { id: 26, name: "Green", image: "/images/placeholder-image.jpg" },
+                    { id: 27, name: "Steel Blue", image: "/images/placeholder-image.jpg" },
+                    { id: 28, name: "Maikaro", image: "/images/placeholder-image.jpg" },
+                    { id: 29, name: "Hamburg stripes", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Stretch pilot",
+                description: "410g/qm",
+                fabrics: [
+                    { id: 30, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 31, name: "Navy", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "CORDURA®",
+                description: "cotton 260g/qm",
+                fabrics: [
+                    { id: 32, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 33, name: "Dark Gray", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "CANVAS PES",
+                description: "cotton 310g/qm",
+                fabrics: [
+                    { id: 34, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 35, name: "Brown", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Ribbed moleskin",
+                description: "320 g/qm",
+                fabrics: [
+                    { id: 36, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 37, name: "Grey", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Twill",
+                description: "100% cotton 375g/qm",
+                fabrics: [
+                    { id: 38, name: "Black", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Jeans Stretch",
+                description: "12,25oz/385g/qm",
+                fabrics: [
+                    { id: 39, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
+                ],
+            },
+            {
+                groupName: "Denim Jeans",
+                description: "100% cotton 14,5oz/475g/qm",
+                fabrics: [
+                    { id: 40, name: "Indigo blue", image: "/images/placeholder-image.jpg" },
+                    { id: 41, name: "Black", image: "/images/placeholder-image.jpg" },
+                ],
+            },
         ],
         organic: [
             {
