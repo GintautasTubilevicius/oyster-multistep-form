@@ -125,7 +125,7 @@ const Step2 = ({ formData, setFormData, category }) => {
 
     return (
         <div className="flex flex-col gap-8 sm:flex-row sm:p-4">
-            <div className="sm:sticky sm:top-0 sm:self-start sm:h-screen bg-[#EEEEEE] pl-0 pr-5 py-2 -mx-5 sm:min-w-[210px] sm:text-end sm:bg-transparent sm:pl-0 sm:pr-0 sm:py-0 sm:mx-0">
+            <div className="sm:sticky sm:top-0 sm:self-start bg-[#EEEEEE] pl-0 pr-5 py-2 -mx-5 sm:min-w-[210px] sm:text-end sm:bg-transparent sm:pl-0 sm:pr-0 sm:py-0 sm:mx-0">
                 <h3 className="text-[24px] font-bold mb-4 hidden sm:block">FEATURES</h3>
                 <ul className="flex flex-row pl-5 pr-5 -mr-5 overflow-x-auto text-nowrap sm:space-y-4 sm:flex-col sm:p-0 sm:mr-0">
                     {Object.keys(categories).map((category) => {
@@ -147,8 +147,8 @@ const Step2 = ({ formData, setFormData, category }) => {
                 </ul>
             </div>
 
-            <div className="sm:w-full">
-                <div className="flex flex-wrap gap-5 sm:gap-8 sm:justify-start">
+            <div className="sm:w-full sm:flex sm:justify-center">
+                <div className="flex flex-wrap gap-5 sm:gap-8 sm:justify-start sm:w-[250px] st1:w-[532px] st2:w-[814px] st3:w-auto">
                     {categoryData.length === 0 ? (
                         <div>No features available for this category.</div>
                     ) : (

@@ -24,15 +24,15 @@ const Step1 = ({ formData, setFormData }) => {
                     { id: 6, name: "Dark grey", image: "/images/placeholder-image.jpg" },
                 ],
             },
-            // {
-            //     groupName: "Genoa corduroy",
-            //     description: "440g/qm (small ribs)",
-            //     fabrics: [
-            //         { id: 7, name: "Black", image: "/images/placeholder-image.jpg" },
-            //         { id: 8, name: "Olive", image: "/images/placeholder-image.jpg" },
-            //         { id: 9, name: "Grey", image: "/images/placeholder-image.jpg" },
-            //     ],
-            // },
+            {
+                groupName: "Genoa corduroy",
+                description: "440g/qm (small ribs)",
+                fabrics: [
+                    { id: 7, name: "Black", image: "/images/placeholder-image.jpg" },
+                    { id: 8, name: "Olive", image: "/images/placeholder-image.jpg" },
+                    { id: 9, name: "Grey", image: "/images/placeholder-image.jpg" },
+                ],
+            },
             {
                 groupName: "Stretch Corduroy",
                 description: "320g/qm (small ribs)",

@@ -20,6 +20,9 @@ module.exports = {
 
       'lg': '1440px',
       // => @media (min-width: 1440px) { ... }
+      'st3': '1424px',
+      'st2': '1142px',
+      'st1': '860px',
     },
   },
   plugins: [],
